@@ -1,0 +1,26 @@
+.nav {
+    &-block {
+        display: flex;
+        align-items: center;
+    }
+    &-route__link {
+        font-size: 16px;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover {
+            text-decoration: underline;
+        }
+        &-disabled {
+            color: #a1aaa1
+        }
+    }
+}
+
+.right-arrow {
+    &::after {
+        content: '\203A';
+        font-size: 25px;
+        margin-right: 10px;
+    }
+}

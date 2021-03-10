@@ -1,0 +1,12 @@
+<h2 class="gallery-block__title">{{blockTitle}}</h2>
+<div class="gallery-block"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="50"
+    (scrolled)="onScroll()">
+    <div *ngFor='let p of photos' class="gallery-photo-img">
+        <div class="gallery-photo-img__heart" (click)="likePhoto(p)" [ngStyle]="{'background-color': p.liked_by_user ? '#00c4cc' : ''}"></div>
+        <div class="gallery-photo-img__download" (click)="downloadPhoto(p)"></div>
+        <img [src]="p.urls.small" [alt]='p.alt_description' class="gallery-photo-img__item" (click)="openDialog(p)">
+    </div>
+</div>

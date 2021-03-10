@@ -1,0 +1,7 @@
+<div class="categories-block">
+        <div *ngFor="let category of categories">
+            <div class="category" style="background: url('{{category.backgroundImage}}') no-repeat center/100%;" (click)='loadPhotoByCategory(category.label)'>
+                {{category.label}}
+            </div>
+        </div>
+</div>

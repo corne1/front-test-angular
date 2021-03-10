@@ -1,0 +1,37 @@
+.search {
+    &-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../../../../assets/img/bg.jpeg') no-repeat center/100%;
+        margin-bottom: 20px;
+        &-content {
+            padding-top: 90px;
+            padding-bottom: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 600px;
+            &__paragraph {
+                max-width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        &__title {
+            font-size: 48px;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+        &__input {
+            width: 100%;
+            padding: 9px 12px 10px 40px;
+            border-radius: 5px;
+            background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='currentColor' d='M15.2 16.34a7.5 7.5 0 1 1 1.38-1.45l4.2 4.2a1 1 0 1 1-1.42 1.41l-4.16-4.16zm-4.7.16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z'/%3E%3C/svg%3E") no-repeat #ffffff;
+            background-position: left 8px center;
+            margin-bottom: 20px;
+        }
+    }
+}

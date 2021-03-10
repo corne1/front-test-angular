@@ -1,0 +1,60 @@
+.gallery {
+    &-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &-photo {
+        &-img {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            margin-right: 1rem;
+            position: relative;
+            &__heart {
+                opacity: 0;
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                background-color: #3b3b3b;
+                
+                &::before {
+                    content: '\2661';
+                    color: #ffffff;
+                    font-size: 30px;
+                }
+            }
+            &__download {
+                opacity: 0;
+                position: absolute;
+                top: 5px;
+                right: 40px;
+                width: 30px;
+                height: 30px;
+                border-radius: 3px;
+                border: 1px solid #000000;
+                background: url('../../../../assets/img/download-arrow.svg') center/100%;
+            }
+            &:hover {
+                cursor: pointer;
+                & .gallery-photo-img__heart {
+                    opacity: 1;
+                }
+                & .gallery-photo-img__download {
+                    opacity: 1;
+                }
+            }
+            &__item {
+                width: auto;
+                height: 289px;
+                border-radius: 3px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<p class="nav-block">
+    <a routerLink='/' class="nav-route__link">Главная</a>
+    <span class="right-arrow"></span>
+    <a routerLink='/photos' class="nav-route__link">Фото</a>
+    <span class="right-arrow"></span>
+    <span class="nav-route__link-disabled">{{inputSearchValue | titlecase}}</span>
+</p>
+<app-gallery-template
+    [isGallery]='false'
+    [blockTitle]='outputBlockTitle'
+    [photos]='searchGallery'>
+</app-gallery-template>
